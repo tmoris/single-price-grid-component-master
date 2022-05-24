@@ -1,0 +1,130 @@
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+:root {
+  /*  Colors */
+
+/*  Primary */
+--clr-lightcyan: hsl(174, 93%, 39%);
+--clr-Cyan: hsl(179, 62%, 43%);
+--clr-BrightYellow: hsl(71, 73%, 54%);
+--clr-white: hsl(0, 0%, 100%);
+
+/* Neutral */
+
+--clr-LightGray: hsl(204, 43%, 93%);
+--clr-GrayishBlue: hsl(218, 22%, 67%);
+
+/* font-size */
+--fs-large: 2rem;
+--fs-medium: 1.25rem;
+--fs-normal: 1rem;
+--fs-small: .8175rem;
+
+/* font weight */
+--fw-bold: 700;
+--fw-reg: 400;
+
+/* font families */
+--clr-ff-pramiry: 'Karla', sans-serif;
+--ff-secondary: 'Lexend Deca', sans-serif;
+
+}
+
+body{
+background-color:var(--clr-LightGray);
+font-size: 1rem;
+font-family: var(--clr-ff-pramiry);
+color: var(--clr-GrayishBlue);
+}
+.container {
+width: min(80%, 70rem);
+margin-block: auto;
+margin-inline: auto;
+padding-block: 2em;
+}
+.title {
+  color: var(--clr-lightcyan);
+  padding-bottom: 1em;
+  font-size: var(--fs-medium);
+}
+.subtitle {
+font-size: var(--fs-medium);
+text-transform: capitalize;
+font-weight: var(--fw-reg);
+padding-bottom: 0.5em;
+}
+.opac-text {
+  opacity: 0.5;
+  font-weight: var(--fw-reg);
+  font-size: var(--fs-small);
+}
+.bold-text {
+font-weight: var(--fw-bold);
+font-size: var(--fs-medium);
+padding-bottom: 0.25em;
+}
+
+.yellow-text {
+  color: var(--clr-BrightYellow);
+  font-weight: var(--fw-bold);
+  padding-bottom: 0.5em;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 43.75rem;
+}
+.grid>*:first-child {
+  padding: 1.5em;
+  background-color: var(--clr-white);
+}
+.grid-col-span {
+  grid-column: span 2;
+}
+.flex {
+display: flex;
+color: var(--clr-white);
+
+}
+.flex >* {
+  flex-basis: 100%;
+  padding: 1.5em;
+}
+.grid-subitem1 {
+  background-color: var(--clr-Cyan);
+}
+.grid-subitem2 {
+  background-color: var(--clr-lightcyan) ;
+  padding-left: 1em;
+}
+.btn {
+width: 100%;
+display: block;
+margin-top: 2em;
+border-radius: 0.5em;
+background-color: var(--clr-BrightYellow);
+color: var(--clr-white);
+border: 0;
+padding: 0.5em 0.75em;
+text-transform: capitalize;
+}
+.btn:hover,
+.btn:focus {
+  opacity: 0.6;
+}
+    .attribution { 
+      font-size: 11px; text-align: center;
+    }
+    .attribution a { 
+      color: hsl(228, 45%, 44%); 
+    }
+@media (max-width: 31.25rem) {
+  .flex {
+    flex-direction: column;
+  }
+}
