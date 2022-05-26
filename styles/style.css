@@ -124,6 +124,8 @@ text-transform: capitalize;
 }
 .footer {
   position: absolute;
+  bottom: 2em;
+
 }
     .attribution { 
       font-size: 11px; text-align: center;
