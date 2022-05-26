@@ -50,7 +50,6 @@ color: var(--clr-GrayishBlue);
 }
 .container {
 width: min(80%, 70rem);
-margin-block: auto;
 margin-inline: auto;
 }
 .title {
@@ -122,6 +121,9 @@ text-transform: capitalize;
 .btn:hover,
 .btn:focus {
   opacity: 0.6;
+}
+.footer {
+  position: absolute;
 }
     .attribution { 
       font-size: 11px; text-align: center;
