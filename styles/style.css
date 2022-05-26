@@ -41,6 +41,13 @@ font-size: var(--fs-normal);
 font-family: var(--clr-ff-pramiry);
 color: var(--clr-GrayishBlue);
 }
+.flex-centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 .container {
 width: min(80%, 70rem);
 margin-block: auto;
