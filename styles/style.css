@@ -52,7 +52,6 @@ color: var(--clr-GrayishBlue);
 width: min(80%, 70rem);
 margin-block: auto;
 margin-inline: auto;
-padding-block: 2em;
 }
 .title {
   color: var(--clr-lightcyan);
@@ -131,6 +130,9 @@ text-transform: capitalize;
       color: hsl(228, 45%, 44%); 
     }
 @media (max-width: 31.25rem) {
+  .container  {
+    padding-inline: 2em;
+  }
   .flex {
     flex-direction: column;
   }
